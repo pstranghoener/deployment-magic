@@ -9,6 +9,8 @@ jobs:
     name: "Prepare release"
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      
       - name: Upload
         uses: appleboy/scp-action@master
         with:
